@@ -1,7 +1,11 @@
 package com.example.dialogdemo;
 
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,10 +24,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 MyFirstDialog dialogo = new MyFirstDialog();
-
+                dialogo.setCancelable(false);
                 dialogo.show(getSupportFragmentManager(),"1234");
 
             }
         });
+
+
+
     }
 }
