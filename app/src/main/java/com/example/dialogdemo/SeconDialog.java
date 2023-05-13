@@ -36,6 +36,7 @@ import androidx.fragment.app.DialogFragment;
                  .setIcon(R.drawable.ic_launcher_foreground)
                  .setTitle(diaTitle)
                  .setCancelable(false);
+
          return myBuilder.create();
      }
 
